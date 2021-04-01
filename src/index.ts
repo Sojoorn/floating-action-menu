@@ -2,6 +2,7 @@ import {NgModule, ModuleWithProviders} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FloatingActionMenuComponent} from './floating-action-menu/floating-action-menu.component';
 import {FloatingActionButtonComponent} from './floating-action-menu/floating-action-button.component';
+import { SvgSpriteComponent } from './floating-action-menu/svg-sprite.component';
 
 @NgModule({
   imports: [
@@ -9,11 +10,13 @@ import {FloatingActionButtonComponent} from './floating-action-menu/floating-act
   ],
   declarations: [
       FloatingActionMenuComponent,
-      FloatingActionButtonComponent
+      FloatingActionButtonComponent,
+      SvgSpriteComponent
   ],
   exports: [
       FloatingActionMenuComponent,
-      FloatingActionButtonComponent
+      FloatingActionButtonComponent,
+      SvgSpriteComponent
   ]
 })
 export class FloatingActionMenuModule {

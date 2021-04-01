@@ -1,0 +1,29 @@
+.icon {
+  /* Flow with text content */
+  display: inline-block;
+  /* Use the parent font-size for width and height */
+  height: 1em;
+  width: 1em;
+  /* Vertically align icon with adjacent text */
+  vertical-align: middle;
+  /* Align more nicely with capital letters */
+  position: relative;
+  top: -0.0625em;
+  pointer-events: none;
+  &.icon--fill {
+    /* Inherit the parent text color */
+    fill: currentColor;
+  }
+  //&.icon--stroke {
+    //fill: none;
+    //stroke: currentColor;
+  //}
+  &.icon--4em {
+    height: 4em;
+    width: 4em;
+  }
+  &.icon--3em {
+    height: 3em;
+    width: 3em;
+  }
+}
