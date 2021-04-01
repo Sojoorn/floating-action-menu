@@ -3,9 +3,9 @@
   <li class="mfb-component__wrap">
     <a class="mfb-component__button--main" [attr.data-mfb-label]="label" (click)="clicked()" (mouseenter)="entered()" (mouseleave)="leaved()">
       <!-- the main button icon visibile by default -->
-      <i class="mfb-component__main-icon--resting {{iconClass}}"></i>
+      <svg class="mfb-component__main-icon--resting" [icon]="iconClass"></svg>
       <!-- the main button icon visibile when the user is hovering/interacting with the menu -->
-      <i class="mfb-component__main-icon--active {{activeIconClass}}"></i>
+      <svg class="mfb-component__main-icon--active" [icon]="activeIconClass"></svg>
     </a>
 
     <ul class="mfb-component__list">
